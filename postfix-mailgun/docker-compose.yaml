@@ -1,0 +1,13 @@
+version: '3'
+services:
+    postfix:
+        image: ooclab/postfix-mailgun
+        ports:
+            - "587:587"
+        environment:
+            TLS_DOMAIN: cn1.mail.ooclab.com
+            TLS_ACCOUNT: notice1:abc111;    notice2:abc222;  notice3:abc333
+            MAILGUN_USERNAME: Your Mailgun Username
+            MAILGUN_PASSWORD: Your Mailgun Password
+        volumes:
+            - "./certs:/etc/postfix/certs"
