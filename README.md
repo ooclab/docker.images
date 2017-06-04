@@ -5,4 +5,5 @@
 
 | Image | 描述 |
 |-----|-----|
+| [postfix](./postfix) | 搭建 postfix 邮件发送服务器 |
 | [postfix-mailgun](./postfix-mailgun) | 搭建 postfix 通过 mailgun 转发邮件 |
